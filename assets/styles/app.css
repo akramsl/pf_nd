@@ -1,5 +1,43 @@
 body {
+    font-family: 'Jersey 10', serif;
     background-color: #1a202c;
     color: white;
 }
 
+.nav-link {
+    transition: all 0.3s ease-in-out;
+    border: 2px solid transparent;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+.nav-link:hover {
+    background-color: #6a6a6a;
+    border-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.5);
+}
+
+.nav-link i {
+    margin-right: 15px; /* marge entre icon et titre */
+}
+
+.nav-item .nav-link {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 0;
+}
+
+.nav-item .active {
+    background-color: #2563eb;
+    border-top-right-radius: 35%;
+    border-bottom-right-radius: 35%;
+}
+
+.nav-item.active .nav-link {
+    color: white;
+}
+
+nav.sidebar {
+    width: 20%;
+}

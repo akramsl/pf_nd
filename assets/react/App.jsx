@@ -7,11 +7,12 @@ import About from "./pages/About.jsx";
 import Contact from "./pages/Contact.jsx";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/app.css";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 export default function App() {
   return (
     <Router>
-      <div className="container-fluid d-flex">
+      <div className="container-fluid px-0 d-flex">
         <Sidebar />
         <div className="content flex-grow-1 p-3">
           <Routes>
