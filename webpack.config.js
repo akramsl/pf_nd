@@ -5,6 +5,8 @@ Encore
   .setPublicPath('/build')
   .addEntry('app', './assets/react/index.js')
   .splitEntryChunks()
+
+  .enableReactPreset()
   .enableSingleRuntimeChunk()
   .cleanupOutputBeforeBuild()
   .enableBuildNotifications()
